@@ -1,3 +1,10 @@
+:root {
+    --primary-color: steelblue;
+    --secondary-color: white;
+    /* Next line is advised by Google to use with "md-dark" Material Icon Font and light/white background */
+    --icon-color: rgba(0, 0, 0, 0.54);
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -11,23 +18,25 @@ div.grid-container {
     /* Next line is used to respect some eventually existing vertical scrollbar */
     max-width: 100%;
     grid-template-rows: auto 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr auto;
     grid-template-areas:
         "area1 area2"
         "area3 area3";
+    background-color: var(--secondary-color);
+    /* background-color: yellow; */
 }
 
 div.grid-item-nav1 {
     grid-area: area1;
     text-align: left;
-    padding: 3px 0px 3px 3px;
+    padding: 5px 0px 5px 5px;
     /* background-color: red; */
 }
 
 div.grid-item-nav2 {
     grid-area: area2;
     text-align: right;
-    padding: 3px 6px 3px 0px;
+    padding: 5px 10px 5px 0px;
     /* background-color: green; */
 }
 
@@ -42,30 +51,34 @@ nav {
     font-size: 0;
 }
 
-nav>span.material-icons {
-    vertical-align: middle;
-    margin-right: 5px;
-    color: rgba(0, 0, 0, 0.54);
-    /* background-color: orange; */
-}
-
-nav>a {
-    /* Next line is used as a workaround for the "white-spaces in inline-elements" problem */
-    /* For the visibility of this element we need some font-size since the parent element has a font-size of 0 */
-    font-size: small;
-    vertical-align: middle;
-    text-decoration: none;
-    color: steelblue;
-    /* background-color: purple; */
-}
-
+nav>a,
 nav>span.delimiter {
     /* Next line is used as a workaround for the "white-spaces in inline-elements" problem */
     /* For the visibility of this element we need some font-size since the parent element has a font-size of 0 */
     font-size: small;
+}
+
+nav>span.material-icons,
+nav>a,
+nav>span.delimiter {
     vertical-align: middle;
+}
+
+nav>span.material-icons {
+    margin-right: 5px;
+    color: var(--icon-color);
+    /* background-color: pink; */
+}
+
+nav>a {
+    text-decoration: none;
+    color: var(--primary-color);
+    /* background-color: purple; */
+}
+
+nav>span.delimiter {
     margin-left: 5px;
     margin-right: 5px;
-    border-left: 2px solid rgba(0, 0, 0, 0.54);
-    /* background-color: yellow; */
+    border-left: 2px solid var(--icon-color);
+    /* background-color: orange; */
 }
