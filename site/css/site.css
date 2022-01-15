@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div.grid-container {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    /* Next line is used to respect some eventually existing vertical scrollbar */
+    max-width: 100%;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "area1 area2"
+        "area3 area3";
+}
+
+div.grid-item-nav1 {
+    grid-area: area1;
+    text-align: left;
+    padding: 3px 0px 3px 3px;
+    /* background-color: red; */
+}
+
+div.grid-item-nav2 {
+    grid-area: area2;
+    text-align: right;
+    padding: 3px 6px 3px 0px;
+    /* background-color: green; */
+}
+
+div.grid-item-main {
+    grid-area: area3;
+    /* background-color: blue; */
+}
+
+nav {
+    /* Next line is used as a workaround for the "white-spaces in inline-elements" problem */
+    /* See https://stackoverflow.com/questions/5078239/how-do-i-remove-the-space-between-inline-inline-block-elements */
+    font-size: 0;
+}
+
+nav>span.material-icons {
+    vertical-align: middle;
+    margin-right: 5px;
+    color: rgba(0, 0, 0, 0.54);
+    /* background-color: orange; */
+}
+
+nav>a {
+    /* Next line is used as a workaround for the "white-spaces in inline-elements" problem */
+    /* For the visibility of this element we need some font-size since the parent element has a font-size of 0 */
+    font-size: small;
+    vertical-align: middle;
+    text-decoration: none;
+    color: steelblue;
+    /* background-color: purple; */
+}
+
+nav>span.delimiter {
+    /* Next line is used as a workaround for the "white-spaces in inline-elements" problem */
+    /* For the visibility of this element we need some font-size since the parent element has a font-size of 0 */
+    font-size: small;
+    vertical-align: middle;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-left: 2px solid rgba(0, 0, 0, 0.54);
+    /* background-color: yellow; */
+}
