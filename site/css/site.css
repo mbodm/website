@@ -1,7 +1,7 @@
 :root {
     --primary-color: steelblue;
     --secondary-color: white;
-    /* Next line is advised by Google to use with "md-dark" Material Icon Font and light/white background */
+    /* Next line is advised by Google to use with "md-dark" Material Icon Font and light/white background and is also used now in svg icon files */
     --icon-color: rgba(0, 0, 0, 0.54);
 }
 
@@ -58,15 +58,14 @@ nav>span.delimiter {
     font-size: small;
 }
 
-nav>span.material-icons,
+nav>img,
 nav>a,
 nav>span.delimiter {
     vertical-align: middle;
 }
 
-nav>span.material-icons {
+nav>img {
     margin-right: 5px;
-    color: var(--icon-color);
     /* background-color: pink; */
 }
 
