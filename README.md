@@ -1,4 +1,4 @@
-# MBODM Website
+# MBODM website
 
 This repo contains my rather simple http://mbodm.com website.
 
