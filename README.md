@@ -8,4 +8,4 @@ I use this GitHub repo for my website, just for some easier maintaining. This re
 ### License info
 I used some typical GitHub MIT predefined license for my site. Feel free to reuse stuff from my site. Since i am not a multibillion-dollar-company, there is not much to protect. 😁
 
-Have fun. 👋
+Have fun.
