@@ -16,5 +16,8 @@ Taken from https://fonts.google.com/icons
 Icons license:
 Above Google site states that all icons are under Apache license 2.0 and free to use for everyone.
 
+Avatar license:
+Since the avatar file is a photo (taken in reallife) and therefore individual-related data, i except this file from the repo´s MIT license here, so the typical actual law and rights holder stuff of a personal photo shall apply here. As a side note: The photo was taken in the EU, under the GDPR (EU DSVGO).
+
 Date:
 03/2022
