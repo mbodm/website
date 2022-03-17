@@ -1,0 +1,20 @@
+Logo font:
+Kimberley Black
+https://typodermicfonts.com/kimberley
+https://www.dafont.com/kimberley.font
+
+Font license:
+Free Desktop License
+https://typodermicfonts.com/license
+
+Font license notes:
+As i understand it, the font is completely free to use.
+
+Icons:
+Taken from https://fonts.google.com/icons
+
+Icons license:
+Above Google site states that all icons are under Apache license 2.0 and free to use for everyone.
+
+Date:
+03/2022
