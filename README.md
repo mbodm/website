@@ -1,6 +1,6 @@
 # MBODM Website
 
-This repo contains my rather simple mbodm.com website
+This repo contains my rather simple mbodm.com website.
 
 ### General info
 I use this GitHub repo for my website, just for some easier maintaining. This repo is public. But since my site is rather simple structured (no backend pre-rendering or anyting like that), the complete source of my site is sent to the browser anyway. So it does not really matter if this repo is private or public. :)
