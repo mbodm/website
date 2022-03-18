@@ -1,13 +1,19 @@
 :root {
     --primary-color: steelblue;
     --secondary-color: white;
-    /* Next line is advised by Google to use with "md-dark" Material Icon Font and light/white background and is also used now in svg icon files */
+    /* Next code line is advised by Google to use with "md-dark" Material Icon Font, */
+    /* when used with some light/white background. The SVG icons use same color too. */
     --icon-color: rgba(0, 0, 0, 0.54);
 }
 
 body {
     margin: 0;
     padding: 0;
+    /* Next 2 code lines are used to counter the "100vh problem" on mobile browsers, */
+    /* since mobile browser viewport is less than 100vh and we get scrollbar issues. */
+    /* See https://stackoverflow.com/questions/37112218/css3-100vh-not-constant-in-mobile-browser */
+    height: 100%;
+    position: fixed;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -15,7 +21,7 @@ body {
     display: grid;
     width: 100vw;
     height: 100vh;
-    /* Next line is used to respect some eventually existing vertical scrollbar */
+    /* Next code line is used to respect some eventually existing vertical scrollbar. */
     max-width: 100%;
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 1fr auto;
@@ -64,15 +70,15 @@ body {
 }
 
 nav {
-    /* Next line is used as a workaround for the "white-spaces in inline-elements" problem */
+    /* Next code line is used as a workaround for the "white-spaces in inline-elements" problem. */
     /* See https://stackoverflow.com/questions/5078239/how-do-i-remove-the-space-between-inline-inline-block-elements */
     font-size: 0;
 }
 
 nav>a,
 nav>span.delimiter {
-    /* Next line is used as a workaround for the "white-spaces in inline-elements" problem */
-    /* For the visibility of this element we need some font-size since the parent element has a font-size of 0 */
+    /* Next code line is used for the visibility of this element. We need some font-size here, since the */
+    /* parent element has a font-size of 0, cause of above "white-spaces in inline-elements" workaround. */
     font-size: small;
 }
 
