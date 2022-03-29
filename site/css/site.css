@@ -1,28 +1,32 @@
 :root {
     --primary-color: steelblue;
     --secondary-color: white;
-    /* Next code line is advised by Google to use with "md-dark" Material Icon Font, */
-    /* when used with some light/white background. The SVG icons use same color too. */
+    /* Next line is advised by Google to use with "md-dark" Material Icon Font and light/white background and is also used now in svg icon files */
     --icon-color: rgba(0, 0, 0, 0.54);
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    /* Next line is needed, cause of the 100vh-problem on mobile browsers ("mobile address bar height"-problem). */
+    height: 100%;
+    /* background-color: red; */
 }
 
 body {
     margin: 0;
     padding: 0;
-    /* Next 2 code lines are used to counter the "100vh problem" on mobile browsers, */
-    /* since mobile browser viewport is less than 100vh and we get scrollbar issues. */
-    /* See https://stackoverflow.com/questions/37112218/css3-100vh-not-constant-in-mobile-browser */
+    width: 100vw;
+    /* Next line is needed (instead of 100vh), cause of the 100vh-problem on mobile browsers ("mobile address bar height"-problem). */
     height: 100%;
-    position: fixed;
+    /* Next line is used to respect some eventually existing vertical scrollbar */
+    max-width: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* background-color: yellow; */
 }
 
 .grid-container {
     display: grid;
-    width: 100vw;
-    height: 100vh;
-    /* Next code line is used to respect some eventually existing vertical scrollbar. */
-    max-width: 100%;
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 1fr auto;
     grid-template-areas:
@@ -30,7 +34,7 @@ body {
         "area3 area3"
         "area4 area4";
     background-color: var(--secondary-color);
-    /* background-color: red; */
+    /* background-color: teal; */
 }
 
 .grid-nav1 {
@@ -70,15 +74,15 @@ body {
 }
 
 nav {
-    /* Next code line is used as a workaround for the "white-spaces in inline-elements" problem. */
+    /* Next line is used as a workaround for the "white-spaces in inline-elements" problem */
     /* See https://stackoverflow.com/questions/5078239/how-do-i-remove-the-space-between-inline-inline-block-elements */
     font-size: 0;
 }
 
 nav>a,
 nav>span.delimiter {
-    /* Next code line is used for the visibility of this element. We need some font-size here, since the */
-    /* parent element has a font-size of 0, cause of above "white-spaces in inline-elements" workaround. */
+    /* Next line is used as a workaround for the "white-spaces in inline-elements" problem */
+    /* For the visibility of this element we need some font-size since the parent element has a font-size of 0 */
     font-size: small;
 }
 
@@ -112,4 +116,8 @@ footer {
     font-size: small;
     color: var(--icon-color);
     /* background-color: bisque; */
+}
+
+footer>span {
+    display: inline-block;
 }
