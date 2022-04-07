@@ -13,7 +13,7 @@ html {
     /* since there the viewport is less than 100vh and creates scrolling issues. */
     /* See https://stackoverflow.com/questions/37112218/css3-100vh-not-constant-in-mobile-browser */
     height: 100%;
-    /* background-color: red; */
+    background-color: red;
 }
 
 body {
@@ -28,7 +28,7 @@ body {
     /* Next code line is used to respect some eventually existing vertical scrollbar. */
     max-width: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* background-color: yellow; */
+    background-color: yellow;
 }
 
 .grid-container {
@@ -40,43 +40,34 @@ body {
         "area3 area3"
         "area4 area4";
     background-color: var(--secondary-color);
-    /* background-color: teal; */
+    background-color: teal;
 }
 
 .grid-nav1 {
     grid-area: area1;
     padding: 5px 0px 5px 5px;
     text-align: left;
-    /* background-color: pink; */
+    background-color: pink;
 }
 
 .grid-nav2 {
     grid-area: area2;
     padding: 5px 10px 5px 0px;
     text-align: right;
-    /* background-color: lime; */
+    background-color: lime;
 }
 
 .grid-main {
     grid-area: area3;
-    /* background-color: gold; */
-}
-
-.grid-main.home {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: blue; */
-}
-
-.grid-main.about {
-    padding: 10px;
-    /* background-color: blue; */
+    background-color: gold;
 }
 
 .grid-footer {
     grid-area: area4;
-    /* background-color: aqua; */
+    background-color: aqua;
 }
 
 nav {
@@ -100,20 +91,20 @@ nav>span.delimiter {
 
 nav>img {
     margin-right: 5px;
-    /* background-color: violet; */
+    background-color: violet;
 }
 
 nav>a {
     text-decoration: none;
     color: var(--primary-color);
-    /* background-color: tomato; */
+    background-color: tomato;
 }
 
 nav>span.delimiter {
     margin-left: 5px;
     margin-right: 5px;
     border-left: 2px solid var(--icon-color);
-    /* background-color: purple; */
+    background-color: purple;
 }
 
 footer {
@@ -121,7 +112,7 @@ footer {
     text-align: center;
     font-size: small;
     color: var(--icon-color);
-    /* background-color: bisque; */
+    background-color: bisque;
 }
 
 footer>span {
