@@ -1,35 +1,4 @@
-:root {
-    --primary-color: steelblue;
-    --secondary-color: white;
-    /* Next code line is advised by Google to use with "md-dark" Material Icon Font, */
-    /* when used with some light/white background. The SVG icons use same color too. */
-    --icon-color: rgba(0, 0, 0, 0.54);
-}
-
-html {
-    margin: 0;
-    padding: 0;
-    /* Next code line is used to counter the "100vh problem" on mobile browsers, */
-    /* since there the viewport is less than 100vh and creates scrolling issues. */
-    /* See https://stackoverflow.com/questions/37112218/css3-100vh-not-constant-in-mobile-browser */
-    height: 100%;
-    background-color: red;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    /* Next code line is used to counter the "100vh problem" on mobile browsers, */
-    /* since there the viewport is less than 100vh and creates scrolling issues. */
-    /* Using 100% now, instead of 100vh, in combination with above html setting. */
-    /* See https://stackoverflow.com/questions/37112218/css3-100vh-not-constant-in-mobile-browser */
-    height: 100%;
-    /* Next code line is used to respect some eventually existing vertical scrollbar. */
-    max-width: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: yellow;
-}
+@import "site.css";
 
 .grid-container {
     display: grid;
@@ -43,20 +12,6 @@ body {
     background-color: teal;
 }
 
-.grid-nav1 {
-    grid-area: area1;
-    padding: 5px 0px 5px 5px;
-    text-align: left;
-    background-color: pink;
-}
-
-.grid-nav2 {
-    grid-area: area2;
-    padding: 5px 10px 5px 0px;
-    text-align: right;
-    background-color: lime;
-}
-
 .grid-main {
     grid-area: area3;
     display: flex;
@@ -68,43 +23,6 @@ body {
 .grid-footer {
     grid-area: area4;
     background-color: aqua;
-}
-
-nav {
-    /* Next code line is used as a workaround for the "white-spaces in inline-elements" problem. */
-    /* See https://stackoverflow.com/questions/5078239/how-do-i-remove-the-space-between-inline-inline-block-elements */
-    font-size: 0;
-}
-
-nav>a,
-nav>span.delimiter {
-    /* Next code line is used for the visibility of this element. We need some font-size here, since the */
-    /* parent element has a font-size of 0, cause of above "white-spaces in inline-elements" workaround. */
-    font-size: small;
-}
-
-nav>img,
-nav>a,
-nav>span.delimiter {
-    vertical-align: middle;
-}
-
-nav>img {
-    margin-right: 5px;
-    background-color: violet;
-}
-
-nav>a {
-    text-decoration: none;
-    color: var(--primary-color);
-    background-color: tomato;
-}
-
-nav>span.delimiter {
-    margin-left: 5px;
-    margin-right: 5px;
-    border-left: 2px solid var(--icon-color);
-    background-color: purple;
 }
 
 footer {
