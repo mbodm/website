@@ -69,6 +69,13 @@ body {
     /* background-color: blue; */
 }
 
+.grid-main.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blue; */
+}
+
 .grid-main.about {
     padding: 10px;
     /* background-color: blue; */
